@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { MaterialModule,MdCardModule, MdProgressSpinnerModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule, MdCardModule, MdProgressSpinnerModule, MdButtonModule} from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [
-    BrowserModule, MaterialModule, MdCardModule, MdProgressSpinnerModule
+    BrowserModule, BrowserAnimationsModule, MaterialModule,
+    MdCardModule, MdProgressSpinnerModule, MdButtonModule
   ],
   declarations: [
     AppComponent

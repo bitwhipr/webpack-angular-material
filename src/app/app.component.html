@@ -1,11 +1,17 @@
 <main>
   <md-card>
-  <h1>{{appTitle}}</h1>
-  <h2>{{appDescription}}</h2>
-
-  <img class="image-clickable" src="../assets/images/angular.png" (click)="SimulateLoad()">
-  <div class='loader' *ngIf="isLoading">
-      <md-spinner></md-spinner>
+    <div class="app-info">
+      <h1>{{appTitle}}</h1>
+      <h2>{{appDescription}}</h2>
+    </div>
+    <div>
+      <img class="image-clickable" src="../assets/images/angular.png" (click)="simulateLoad()">
+    </div>
+    <div>
+      <a md-raised-button href="https://github.com/johnston4hooah/webpack-angular-material" target="_blank">Project Homepage</a>
+    </div>
+    <div class='loader' *ngIf="isLoading">
+        <md-spinner></md-spinner>
     </div>
   </md-card>
 </main>
