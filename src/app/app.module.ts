@@ -5,6 +5,7 @@ import { MaterialModule, MdCardModule, MdProgressSpinnerModule, MdButtonModule} 
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { AppNavbarComponent } from './app-navbar.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
     MdCardModule, MdProgressSpinnerModule, MdButtonModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    AppNavbarComponent
   ],
   bootstrap: [ AppComponent ]
 })

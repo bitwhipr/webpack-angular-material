@@ -10,14 +10,14 @@ main {
 }
 
 .loader{
-    content: '';
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .loader md-spinner{
@@ -36,9 +36,23 @@ main {
 }
 
 md-card{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(start-color), to(end-color));
-    background-image: -webkit-linear-gradient(top, start-color, end-color);
-    background-image: -moz-linear-gradient(top, start-color, end-color);
-    background-image: linear-gradient(to bottom, #0147A7, blue);;
-    display: inline-block;
+  background: #673ab7;
+  display: inline-block;
+  text-align: center;
 }
+
+.app-info-container{
+  padding: 1em;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+.simulate-tall-content
+{
+  height:8000px;
+}
+
+
+
+
