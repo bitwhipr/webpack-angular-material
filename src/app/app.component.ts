@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import '../assets/css/styles.css';
-import '../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+import '../assets/css/style.scss';
 import 'hammerjs';
 
 @Component({
