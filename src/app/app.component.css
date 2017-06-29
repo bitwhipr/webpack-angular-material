@@ -9,46 +9,6 @@ main {
   /*color: #fff;*/
 }
 
-.loader{
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 998;
-  background-color: rgba(0,0,0,0.3);
-}
-
-.loader md-spinner{
-  position: fixed;
-  z-index: 999;
-  overflow: show;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.image-clickable{
-  cursor: pointer;
-}
-
-md-card{
-  /*background: #673ab7;*/
-  display: inline-block;
-  text-align: center;
-}
-
-.app-info-container{
-  padding: 1em;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
-}
-
 .simulate-tall-content
 {
   height:8000px;

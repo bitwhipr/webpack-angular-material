@@ -1,0 +1,23 @@
+<md-toolbar color="primary">
+    Application Information
+</md-toolbar>
+<div class="app-info-container">
+    <md-card class="hover-card">
+        <div class="app-info">
+            <h1>{{appTitle}}</h1>
+            <h2>{{appDescription}}</h2>
+        </div>
+        <div>
+            <img mdTooltip="Click me for a loading simulation!" mdTooltipPosition="right" class="image-clickable" src="../assets/images/angular.png"
+                (click)="simulateLoad()">
+        </div>
+        <div>
+            <a md-raised-button href="https://github.com/johnston4hooah/webpack-angular-material" target="_blank">
+            <img src="../assets/images/GitHub-Mark-32px.png">&nbsp;
+            Project Homepage</a>
+        </div>
+    </md-card>
+</div>
+<div class='loader' *ngIf="isLoading">
+  <md-spinner></md-spinner>
+</div>

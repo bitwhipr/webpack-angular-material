@@ -1,24 +1,5 @@
 @import './app.material-theme.scss';
 
-@mixin app-theme-component($theme) {
-  // Extract whichever individual palettes you need from the theme.
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-
-
-  // Use mat-color to extract individual colors from a palette as necessary.
-    app-navbar
-    {
-        position: relative;
-        z-index: 10;
-        background: mat-color($primary);
-        color: mat-color($primary,default-contrast);
-        text-transform: uppercase;
-    }
-}
-
-@include app-theme-component($app-theme);
-
 html{
   font-family: 'Roboto', sans-serif;
 }

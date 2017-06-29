@@ -46,11 +46,18 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [{
+        exclude: /node_modules/,
+        use: [
+          {
+           loader: 'to-string-loader' // Takes the compiled sass and outputs it as a string to make Angular happy :)
+        },
+        {
             loader: "style-loader" // creates style nodes from JS strings
-        }, {
+        }, 
+        {
             loader: "css-loader" // translates CSS into CommonJS
-        }, {
+        }, 
+        {
             loader: "sass-loader" // compiles Sass to CSS
         }]
       }
