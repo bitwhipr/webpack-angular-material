@@ -4,6 +4,8 @@ import '../../node_modules/material-design-icons/iconfont/material-icons.css';
 import '../assets/css/style.scss';
 import 'hammerjs';
 
+import { AppService } from './app.service';
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -11,10 +13,7 @@ import 'hammerjs';
 })
 
 export class AppComponent {
-  appIsLoading: boolean;
-
-    constructor(){
-      this.appIsLoading = false;
+    constructor(private appService: AppService){
     }
  }
 

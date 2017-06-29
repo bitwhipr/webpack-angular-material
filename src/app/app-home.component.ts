@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AppService } from './app.service';
+
 @Component({
     selector: 'app-home',
     templateUrl: 'app-home.component.html',
@@ -11,17 +13,13 @@ export class AppHomeComponent implements OnInit {
     appDescription: string;
     isLoading: boolean;
 
-    constructor() {
+    constructor(private appService: AppService) {
         this.appTitle = "Hello from Angular App with Webpack";
         this.appDescription = "An Angular and Sears Johnston production"
     }
 
     simulateLoad() {
-        this.isLoading = true;
-
-        setTimeout(() => {
-            this.isLoading = false;
-        }, 5000)
+        this.appService.simulateLoad();
     }
 
     openHomepage(): void {

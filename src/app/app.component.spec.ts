@@ -14,10 +14,10 @@ describe('App', () => {
     expect(fixture.componentInstance instanceof AppComponent).toBe(true, 'should create AppComponent');
   });
 
-  it('should have a loading property', ()=>{
-    let fixture = TestBed.createComponent(AppComponent);
+  // it('should have a loading property', ()=>{
+  //   let fixture = TestBed.createComponent(AppComponent);
 
-    expect(fixture.componentInstance.appIsLoading).toBeDefined('should be defined');
-    expect(fixture.componentInstance.appIsLoading).not.toBeNull('should not be null');
-  })
+  //   expect(fixture.componentInstance.).toBeDefined('should be defined');
+  //   expect(fixture.componentInstance.appIsLoading).not.toBeNull('should not be null');
+  // })
 });

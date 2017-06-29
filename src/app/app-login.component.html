@@ -1,0 +1,16 @@
+<md-toolbar [color]="titleColor">
+    Application Login
+</md-toolbar>
+<div class="app-info-container">
+    <md-card class="app-card hover-card">
+        <form #f="ngForm" (ngSubmit)="onSubmit()">
+            <md-input-container>
+                <input mdInput type="text" placeholder="Username" required/>
+            </md-input-container>
+            <md-input-container>
+                <input mdInput type="password" placeholder="Password" required/>
+            </md-input-container>
+            <button md-button type="submit" color="primary">Login</button>
+        </form>
+    </md-card>
+</div>

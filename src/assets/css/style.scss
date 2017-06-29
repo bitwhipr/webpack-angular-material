@@ -34,3 +34,15 @@ md-sidenav
 .flex-spacer{
   flex: 1 1 auto;
 }
+
+.app-info-container{
+  padding: 1em;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+.app-card{
+  display: inline-block!important;
+  text-align: center;
+}

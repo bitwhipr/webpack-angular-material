@@ -9,3 +9,6 @@
     <!-- App router content loads here -->
   </div>
 </md-sidenav-container>
+<div class='loader' *ngIf="appService.isLoading">
+  <md-spinner></md-spinner>
+</div>
