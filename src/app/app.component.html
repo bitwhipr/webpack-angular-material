@@ -5,6 +5,9 @@
     <div class="simulate-tall-content">Sidenav content here</div>
   </md-sidenav>
   <div class="app-content">
+    <md-toolbar [color]="appService.contentTitleColor">
+      {{appService.contentTitle}}
+    </md-toolbar>
     <router-outlet></router-outlet>
     <!-- App router content loads here -->
   </div>

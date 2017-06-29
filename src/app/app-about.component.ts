@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
     selector: 'app-about',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppAboutComponent implements OnInit {
-    constructor() { }
+    constructor(private appService: AppService) {
+        this.appService.contentTitle = "Application About";
+        this.appService.contentTitleColor = "accent";
+    }
 
     ngOnInit() { }
 }

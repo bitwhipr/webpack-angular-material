@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
 export class AppService {
     private _isLoading: boolean;
 
+    contentTitle: string = "Content Title";
+    contentTitleColor: string = "primary";
+
     get isLoading(): boolean{
         return this._isLoading;
     }

@@ -11,7 +11,8 @@ export class AppLoginComponent implements OnInit {
     titleColor:string;
 
     constructor(private appService: AppService) {
-        this.titleColor = "warn";
+        this.appService.contentTitle = "Application Login";
+        this.appService.contentTitleColor = "warn";
     }
 
     ngOnInit() { }

@@ -16,6 +16,9 @@ export class AppHomeComponent implements OnInit {
     constructor(private appService: AppService) {
         this.appTitle = "Hello from Angular App with Webpack";
         this.appDescription = "An Angular and Sears Johnston production"
+
+        this.appService.contentTitle = "Application Information";
+        this.appService.contentTitleColor = "primary";
     }
 
     simulateLoad() {
