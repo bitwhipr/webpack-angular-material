@@ -1,7 +1,7 @@
-<app-navbar class="mat-primary mat-elevation-z6"  color="primary">
+<app-navbar class="mat-primary mat-elevation-z6">
 </app-navbar>
 <md-sidenav-container>
-  <md-sidenav opened="true" mode="side" class="mat-elevation-z5">
+  <md-sidenav opened="false" mode="side" class="mat-elevation-z5">
     <div class="simulate-tall-content">Sidenav content here</div>
   </md-sidenav>
   <div class="app-content">
@@ -9,17 +9,16 @@
       Application Information
     </md-toolbar>
     <div class="app-info-container">
-      <md-card>
+      <md-card class="hover-card">
         <div class="app-info">
           <h1>{{appTitle}}</h1>
           <h2>{{appDescription}}</h2>
         </div>
         <div>
-          <img class="image-clickable" src="../assets/images/angular.png" (click)="simulateLoad()">
+          <img mdTooltip="Click me for a loading simulation!" mdTooltipPosition="right" class="image-clickable" src="../assets/images/angular.png" (click)="simulateLoad()">
         </div>
         <div>
           <a md-raised-button href="https://github.com/johnston4hooah/webpack-angular-material" target="_blank">Project Homepage</a>
-           <a md-button href="https://github.com/johnston4hooah/webpack-angular-material" target="_blank">Project Homepage</a>
         </div>
       </md-card>
     </div>
